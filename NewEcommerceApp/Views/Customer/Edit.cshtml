@@ -1,0 +1,24 @@
+﻿@model NewEcommerceApp.Models.EntityModels.Customer
+
+<div class="card">
+    <div class="card-header">
+        <h1 class="card-title">Customer Edit</h1>
+    </div>
+    <div class="card-body">
+        <form asp-action="Edit" asp-controller="Customer" method="post">
+            <input type="hidden" asp-for="Id" />
+            <label for="Name">Name</label>
+            <input asp-for="Name" type="text" class="form-control" />
+
+            <label for="Phone">Phone</label>
+            <input asp-for="PhoneNo" type="text" class="form-control" />
+
+            <label for="Address">Address</label>
+            <input asp-for="Address" type="text" class="form-control" />
+
+            <input type="submit" value="Save" class="btn btn-primary">
+        </form>
+
+
+    </div>
+</div>

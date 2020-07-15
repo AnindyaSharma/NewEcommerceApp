@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NewEcommerceApp.BLL.Abstrations\NewEcommerceApp.BLL.Abstrations.csproj" />
+    <ProjectReference Include="..\NewEcommerceApp.Models\NewEcommerceApp.Models.csproj" />
+    <ProjectReference Include="..\NewEcommerceApp.Repository\NewEcommerceApp.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

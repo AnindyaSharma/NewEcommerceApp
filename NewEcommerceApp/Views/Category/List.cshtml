@@ -1,0 +1,32 @@
+﻿@using NewEcommerceApp.Models.EntityModels
+@model List<NewEcommerceApp.Models.EntityModels.Category>
+
+
+    <h1>Category List</h1>
+<table class="table table-striped table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            
+            <th>Action</th>
+        </tr>
+
+
+    </thead>
+    <tbody>
+
+        @foreach (Category category in Model)
+        {
+            <tr>
+                <td>@category.Name</td>
+                
+                <td>
+                    <a asp-action="Edit" asp-route-id="@category.Id">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@category.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

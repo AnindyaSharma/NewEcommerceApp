@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200706103817_Add_Product_With_Category.cs" />
+    <Compile Remove="Migrations\20200706103817_Add_Product_With_Category.Designer.cs" />
+    <Compile Remove="Migrations\20200706104155_Category_One2Many_Products.cs" />
+    <Compile Remove="Migrations\20200706104155_Category_One2Many_Products.Designer.cs" />
+    <Compile Remove="Migrations\20200706104923_Add_Product_With_Category.cs" />
+    <Compile Remove="Migrations\20200706104923_Add_Product_With_Category.Designer.cs" />
+    <Compile Remove="Migrations\20200706105008_Category_One2Many_Products.cs" />
+    <Compile Remove="Migrations\20200706105008_Category_One2Many_Products.Designer.cs" />
+    <Compile Remove="Migrations\20200706105154_Category_One2Many_Products.cs" />
+    <Compile Remove="Migrations\20200706105154_Category_One2Many_Products.Designer.cs" />
+    <Compile Remove="Migrations\20200706105455_Category_One_2_Many_Products.cs" />
+    <Compile Remove="Migrations\20200706105455_Category_One_2_Many_Products.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NewEcommerceApp.Models\NewEcommerceApp.Models.csproj" />
+  </ItemGroup>
+
+</Project>
