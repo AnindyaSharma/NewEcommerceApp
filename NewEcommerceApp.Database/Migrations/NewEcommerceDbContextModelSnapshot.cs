@@ -44,6 +44,9 @@ namespace NewEcommerceApp.Migrations
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("CustomerTypeId")
+                        .HasColumnType("int");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -56,7 +59,24 @@ namespace NewEcommerceApp.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CustomerTypeId");
+
                     b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("NewEcommerceApp.Models.EntityModels.CustomerType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CustomerTypes");
                 });
 
             modelBuilder.Entity("NewEcommerceApp.Models.EntityModels.Product", b =>
@@ -90,6 +110,13 @@ namespace NewEcommerceApp.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("NewEcommerceApp.Models.EntityModels.Customer", b =>
+                {
+                    b.HasOne("NewEcommerceApp.Models.EntityModels.CustomerType", "CustomerType")
+                        .WithMany()
+                        .HasForeignKey("CustomerTypeId");
                 });
 
             modelBuilder.Entity("NewEcommerceApp.Models.EntityModels.Product", b =>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -16,10 +17,12 @@ namespace NewEcommerceApp.Controllers
     {
         IProductManager productManager;
         ICategoryManager categoryManager;
-        public ProductController(IProductManager _productManager,ICategoryManager _categoryManager)
+        IMapper mapper;
+        public ProductController(IProductManager _productManager,ICategoryManager _categoryManager,IMapper _mapper)
         {
             productManager = _productManager;
             categoryManager = _categoryManager;
+            mapper = _mapper;
         }
         public IActionResult Index()
         {
@@ -76,20 +79,36 @@ namespace NewEcommerceApp.Controllers
 
         public IActionResult Edit(int? id)
         {
+            var model = new ProductEditViewModel();
+            model.CatagoryItem = categoryManager.GetAll()
+                                                   .Select(c => new SelectListItem()
+                                                   {
+                                                       Text = c.Name,
+                                                       Value = c.Id.ToString()
+                                                   }).ToList();
+
             if (id != null && id > 0)
             {
                 Product product = productManager.GetById(id);
-                if (id != null)
+                if (product != null)
                 {
-                    return View(product);
+                    mapper.Map<Product, ProductEditViewModel>(product, model);
                 }
             }
-            return View();
+            return View(model);
         }
 
         [HttpPost]
-        public IActionResult Edit(Product product)
+        public async Task< IActionResult> Edit(Product product, IFormFile Image)
         {
+            if (Image.Length > 0)
+            {
+                using (MemoryStream stream = new MemoryStream())
+                {
+                    await Image.CopyToAsync(stream);
+                    product.Image = stream.ToArray();
+                }
+            }
             bool isSave = productManager.Update(product);
             if (isSave)
             {

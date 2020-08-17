@@ -2,6 +2,7 @@
 using System.Linq;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using NewEcommerceApp.BLL.Abstrations;
 using NewEcommerceApp.Models;
 using NewEcommerceApp.Models.EntityModels;
@@ -12,11 +13,13 @@ namespace NewEcommerceApp.Controllers
     public class CustomerController : Controller
     {
         ICustomerManager _customerManager;
+        ICustomerTypeManager _customerTypeManager;
         IMapper _mapper;
-        public CustomerController(ICustomerManager customerManager, IMapper mapper)
+        public CustomerController(ICustomerManager customerManager, IMapper mapper, ICustomerTypeManager customerTypeManager)
         {
             _customerManager = customerManager;
             _mapper = mapper;
+            _customerTypeManager = customerTypeManager;
         }
         // GET: /<controller>/
         public IActionResult Index()
@@ -28,6 +31,13 @@ namespace NewEcommerceApp.Controllers
         {
             CustomerCreateViewModel customer = new CustomerCreateViewModel();
             customer.CustomerList = _customerManager.GetAll().Select(cust => _mapper.Map<CustomerRepsonseModel>(cust)).ToList();
+
+            customer.CustomerTypeItem = _customerTypeManager.GetAll().Select(c => new SelectListItem()
+            {
+                Text = c.Name,
+                Value = c.Id.ToString()
+
+            }).ToList();
             return View(customer);
         }
 
@@ -64,19 +74,37 @@ namespace NewEcommerceApp.Controllers
         //customer/edit/id
         public IActionResult Edit(int? id)
         {
-            
+            var model = new CustomerEditViewModel();
+            model.CustomerTypeItem = _customerTypeManager.GetAll().Select(c => new SelectListItem()
+            {
+                Text = c.Name,
+                Value = c.Id.ToString()
+            }).ToList();
+
             if (id != null && id > 0)
             {
-                Customer existingCustomer = _customerManager.GetById(id);
+                Customer customer = _customerManager.GetById(id);
 
-                if (existingCustomer != null)
+                if (customer != null)
                 {
-                    return View(existingCustomer);
+                    _mapper.Map<Customer, CustomerEditViewModel>(customer, model);
+
+                    //model.Id = customer.Id;
+                    //model.Name = customer.Name;
+                    //model.PhoneNo = customer.PhoneNo;
+                    //model.Address = customer.Address;
+                    //model.CustomerTypeItem = _customerTypeManager.GetAll().Select(c => new SelectListItem()
+                    //{
+                    //    Text = c.Name,
+                    //    Value = c.Id.ToString()
+                    //}).ToList();
+                    //return View(existingCustomer);
+
                 }
 
             }
 
-            return View();
+            return View(model);
 
         }
 

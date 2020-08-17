@@ -66,8 +66,17 @@
                 <div id="collapseCustomer" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Customer Components:</h6>
-                        <a class="collapse-item" asp-action="Create" asp-controller="Customer">Crete</a>
-                        <a class="collapse-item" asp-action="List" asp-controller="Customer">List</a>
+                        <div>
+                            <h6 class="collapse-header">Customer Type:</h6>
+                            <a class="collapse-item" asp-action="Create" asp-controller="CustomerType">Crete</a>
+                            <a class="collapse-item" asp-action="List" asp-controller="CustomerType">List</a>
+                        </div>
+                        <div>
+                            <h6 class="collapse-header">Customer:</h6>
+                            <a class="collapse-item" asp-action="Create" asp-controller="Customer">Crete</a>
+                            <a class="collapse-item" asp-action="List" asp-controller="Customer">List</a>
+                        </div>
+                        
                     </div>
                 </div>
             </li>

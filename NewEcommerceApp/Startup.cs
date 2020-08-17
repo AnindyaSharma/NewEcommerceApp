@@ -1,20 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using NewEcommerceApp.BLL;
-using NewEcommerceApp.BLL.Abstrations;
-using NewEcommerceApp.Database;
-using NewEcommerceApp.Repository;
-using NewEcommerceApp.Repository.Abstrations;
 
 namespace NewEcommerceApp
 {
@@ -30,9 +19,10 @@ namespace NewEcommerceApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            NewEcommerceApp.Configuration.ConfigurServices.Configure(services);
-            services.AddAutoMapper(typeof(Startup).Assembly);
             services.AddControllersWithViews();
+            NewEcommerceApp.Configuration.ConfigurServices.Configure(services, Configuration);
+            services.AddAutoMapper(typeof(Startup).Assembly);
+            
         }
             
 

@@ -27,7 +27,7 @@ namespace NewEcommerceApp.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            NewEcommerceApp.Configuration.ConfigurServices.Configure(services);
+            NewEcommerceApp.Configuration.ConfigurServices.Configure(services,Configuration);
             services.AddAutoMapper(typeof(Startup).Assembly);
 
             services.AddMvc(setup =>

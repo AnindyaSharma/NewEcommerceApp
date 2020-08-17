@@ -94,7 +94,7 @@ namespace NewEcommerceApp.Controllers
         {
             if (id != null && id > 0)
             {
-                var category = _categoryManager.GetById(id);
+                Category category = _categoryManager.GetById(id);
 
                 bool isdelete = _categoryManager.Remove(category);
                 if (isdelete)

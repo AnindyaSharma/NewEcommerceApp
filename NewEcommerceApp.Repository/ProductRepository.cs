@@ -22,7 +22,7 @@ namespace NewEcommerceApp.Repository
 
         public override ICollection<Product> GetAll()
         {
-            return db.Products.ToList();
+            return db.Products.Include(c=>c.Category) .ToList();
         }
 
         public Product GetById(int? id)

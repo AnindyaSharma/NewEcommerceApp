@@ -166,3 +166,8 @@ C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\Product\List.cshtml.g.cs
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\bin\Debug\netcoreapp3.1\NewEcommerceApp.Configuration.dll
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\bin\Debug\netcoreapp3.1\NewEcommerceApp.Configuration.pdb
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\Product\Edit.cshtml.g.cs
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\bin\Debug\netcoreapp3.1\appsettings.Production.json
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\CustomerType\Create.cshtml.g.cs
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\CustomerType\List.cshtml.g.cs
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\CustomerType\Edit.cshtml.g.cs

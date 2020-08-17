@@ -17,8 +17,8 @@ namespace NewEcommerceApp.Models.EntityModels
         public string Address { get; set; }
         public bool IsDeleted { get; set; }
 
-        [NotMapped]
-        public ICollection<Customer> CustomerList { get; set; }
+        public int? CustomerTypeId { get; set; }
+        public CustomerType CustomerType { get; set; }
 
         public bool Delete()
         {

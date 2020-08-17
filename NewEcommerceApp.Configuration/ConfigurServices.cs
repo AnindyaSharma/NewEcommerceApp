@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NewEcommerceApp.BLL;
 using NewEcommerceApp.BLL.Abstrations;
@@ -13,8 +14,13 @@ namespace NewEcommerceApp.Configuration
 {
     public static class ConfigurServices
     {
-        public static void Configure(IServiceCollection services)
+        public static void Configure(IServiceCollection services, IConfiguration configuration)
         {
+            services.AddDbContext<NewEcommerceDbContext>(options =>
+            {
+                options.UseSqlServer(configuration.GetSection("Connectionstring:Defaultconnection").Value);
+            });
+
             services.AddTransient<ICustomerManager, CustomerManager>();
             services.AddTransient<ICustomerRepository, CustomerRepository>();
 
@@ -23,6 +29,9 @@ namespace NewEcommerceApp.Configuration
 
             services.AddTransient<IProductManager, ProductManager>();
             services.AddTransient<IProductRepository, ProductRepository>();
+
+            services.AddTransient<ICustomerTypeManager, CustomerTypeManager>();
+            services.AddTransient<ICustomerTypeRepository, CustomerTypeRepository>();
 
             services.AddTransient<DbContext, NewEcommerceDbContext>();
             

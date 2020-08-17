@@ -16,9 +16,11 @@ namespace NewEcommerceApp.AutoMapperProfiles
             CreateMap<CustomerCreateViewModel, Customer>();
             CreateMap<Customer, CustomerCreateViewModel>();
             CreateMap<Customer, CustomerRepsonseModel>();
+            CreateMap<Customer, CustomerEditViewModel>();
 
             CreateMap<ProductCreateViewModel, Product>();
             CreateMap<Product, ProductCreateViewModel>();
+            CreateMap<Product, ProductEditViewModel>();
         }
     }
 }

@@ -22,7 +22,7 @@ namespace NewEcommerceApp.Repository
 
         public override ICollection<Customer> GetAll()
         {
-            return db.Customers.Where(c => c.IsDeleted == false).ToList();
+            return db.Customers.Where(c => c.IsDeleted == false).Include(c=>c.CustomerType).ToList();
         }
 
 

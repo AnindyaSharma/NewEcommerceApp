@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NewEcommerceApp.Models.EntityModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -12,5 +13,7 @@ namespace NewEcommerceApp.Models.ResponseModels
         public string Name { get; set; }
         public string PhoneNo { get; set; }
         public string Address { get; set; }
+        public int? CustomerTypeId { get; set; }
+        public CustomerType CustomerType { get; set; }
     }
 }

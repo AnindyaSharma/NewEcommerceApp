@@ -33,7 +33,7 @@
                             <img src='@imgsrc' style="max-width:100px;max-height:100px" />
                         }
                     </td>
-                    <td>@product.CategoryId</td>
+                    <td>@(product.Category ==null? "N/A" : product.Category.Name)</td>
                     <td>
                         <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-primary productEdit">Edit</a> |
                     
