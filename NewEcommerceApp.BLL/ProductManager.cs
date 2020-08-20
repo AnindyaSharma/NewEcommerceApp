@@ -1,6 +1,7 @@
 ﻿using NewEcommerceApp.BLL.Abstrations;
 using NewEcommerceApp.BLL.Abstrations.Base;
 using NewEcommerceApp.Models.EntityModels;
+using NewEcommerceApp.Models.RequestModels;
 using NewEcommerceApp.Repository.Abstrations;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,10 @@ namespace NewEcommerceApp.BLL
                 return _productRepository.GetById(id);
             }
             return null;
+        }
+        public ICollection<Product> GetByRequest(ProductRequestModel product)
+        {
+            return _productRepository.GetByRequest(product);
         }
     }
 }

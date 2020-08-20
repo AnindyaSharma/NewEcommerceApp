@@ -2,6 +2,7 @@
 using NewEcommerceApp.BLL.Abstrations.Base;
 using NewEcommerceApp.Database;
 using NewEcommerceApp.Models.EntityModels;
+using NewEcommerceApp.Models.RequestModels;
 using NewEcommerceApp.Repository.Abstrations;
 using NewEcommerceApp.Repository.Abstrations.Base;
 using System;
@@ -32,6 +33,32 @@ namespace NewEcommerceApp.Repository
                 return null;
             }
             return GetFirstOrDefault(c => c.Id == id);
+        }
+        public ICollection<Product> GetByRequest(ProductRequestModel product)
+        {
+            var result = db.Products.AsQueryable();
+            if (product == null)
+            {
+                return result.ToList();
+            }
+            if (product.Id > 0)
+            {
+                result = result.Where(c => c.Id == product.Id);
+            }
+            if (!string.IsNullOrEmpty(product.Name))
+            {
+                result = result.Where(c => c.Name.ToLower().Contains(product.Name.ToLower()));
+            }
+            
+            if (!string.IsNullOrEmpty(product.Price))
+            {
+                result = result.Where(c => c.Price.ToLower().Equals(product.Price.ToLower()));
+            }
+            if (!string.IsNullOrEmpty(product.Code))
+            {
+                result = result.Where(c => c.Code.ToLower().Contains(product.Code.ToLower()));
+            }
+            return result.ToList();
         }
     }
 }

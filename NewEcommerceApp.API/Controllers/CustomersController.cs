@@ -1,9 +1,5 @@
-﻿ using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System;
 using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using NewEcommerceApp.BLL.Abstrations;
@@ -50,6 +46,7 @@ namespace NewEcommerceApp.API.Controllers
             return Ok(customer);
         }
 
+        [HttpPost]
         public IActionResult PostCustomer([FromBody]CustomerCreateDTO customerDto)
         {
             if (ModelState.IsValid)
@@ -78,7 +75,7 @@ namespace NewEcommerceApp.API.Controllers
 
         // api/customers/1
         [HttpPut("{Id}")]
-        public IActionResult PutCustomer(int id,[FromBody]JsonPatchDocument<CustomerUpdateDTO> customerDTO)
+        public IActionResult PutCustomer(int id,[FromBody] CustomerUpdateDTO customerDTO)
         {
             try
             {

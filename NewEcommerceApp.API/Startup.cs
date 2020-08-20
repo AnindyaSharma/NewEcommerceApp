@@ -34,8 +34,16 @@ namespace NewEcommerceApp.API
             {
                 setup.InputFormatters.Insert(0, GetJsonPatchInputFormatter());
             })
-                .AddXmlDataContractSerializerFormatters()
+                
                 .AddNewtonsoftJson();
+
+            //For Xml view
+            //services.AddMvc(setup =>
+            //{
+            //    setup.InputFormatters.Insert(0, GetJsonPatchInputFormatter());
+            //})
+            //    .AddXmlDataContractSerializerFormatters()
+            //    .AddNewtonsoftJson();
 
             //services.AddControllersWithViews();
         }
