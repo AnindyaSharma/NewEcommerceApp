@@ -15,6 +15,17 @@ namespace NewEcommerceApp.Database
         public DbSet<Product> Products { get; set; }
         public DbSet<CustomerType> CustomerTypes { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Category>().HasData(
+                new Category
+                {
+                    Id = 4,
+                    Name = "Home Appliance"
+                }
+            );
+        }
+
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
         //    base.OnConfiguring(optionsBuilder);
