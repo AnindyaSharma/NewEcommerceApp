@@ -27,5 +27,19 @@ namespace NewEcommerceApp.Controllers
             }
             return View("NotFound");
         }
+
+        [Route("Error")]
+        [AllowAnonymous]
+        public IActionResult Error()
+        {
+            // Retrieve the exception Details
+            var exceptionHandlerPathFeature =
+                HttpContext.Features.Get<IExceptionHandlerPathFeature>();
+            // LogError() method logs the exception under Error category in the log
+            logger.LogError($"The path {exceptionHandlerPathFeature.Path} " +
+                $"threw an exception {exceptionHandlerPathFeature.Error}");
+
+            return View("Error");
+        }
     }
 }
