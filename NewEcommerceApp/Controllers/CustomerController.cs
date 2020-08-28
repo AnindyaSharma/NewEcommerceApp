@@ -72,6 +72,7 @@ namespace NewEcommerceApp.Controllers
         }
 
         //customer/edit/id
+        [HttpGet]
         public IActionResult Edit(int? id)
         {
             var model = new CustomerEditViewModel();
@@ -120,6 +121,23 @@ namespace NewEcommerceApp.Controllers
 
             return View(customer);
         }
+
+        
+        //public IActionResult Details(int? id)
+        //{
+        //    Customer customer = _customerManager.GetById(id.Value);
+        //    if (customer == null)
+        //    {
+        //        Response.StatusCode = 404;
+        //        return View("CustomerNotFound", id.Value);
+        //    }
+
+        //    if (id != null)
+        //    {
+        //        return View(customer);
+        //    }
+        //    return View();
+        //}
 
         public IActionResult Delete(int? id)
         {

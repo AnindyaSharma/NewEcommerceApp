@@ -71,12 +71,14 @@ namespace NewEcommerceApp.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult List()
         {
             ICollection<Product> products = productManager.GetAll();
             return View(products);
         }
 
+        [HttpGet]
         public IActionResult Edit(int? id)
         {
             var model = new ProductEditViewModel();
