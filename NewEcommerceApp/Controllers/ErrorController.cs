@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
@@ -32,12 +33,13 @@ namespace NewEcommerceApp.Controllers
         [AllowAnonymous]
         public IActionResult Error()
         {
-            // Retrieve the exception Details
             var exceptionHandlerPathFeature =
                 HttpContext.Features.Get<IExceptionHandlerPathFeature>();
-            // LogError() method logs the exception under Error category in the log
-            logger.LogError($"The path {exceptionHandlerPathFeature.Path} " +
-                $"threw an exception {exceptionHandlerPathFeature.Error}");
+
+            ViewBag.ExceptionPath = exceptionHandlerPathFeature.Path;
+            ViewBag.ExceptionMessage = exceptionHandlerPathFeature.Error.Message;
+            ViewBag.StackTrace = exceptionHandlerPathFeature.Error.StackTrace;
+
 
             return View("Error");
         }
