@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using NewEcommerceApp.Models.EntityModels;
 
 namespace NewEcommerceApp.Database
 {
-    public class NewEcommerceDbContext:DbContext
+    public class NewEcommerceDbContext: IdentityDbContext
     {
         public NewEcommerceDbContext(DbContextOptions options):base(options)
         {
@@ -17,6 +18,7 @@ namespace NewEcommerceApp.Database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Category>().HasData(
                 new Category
                 {

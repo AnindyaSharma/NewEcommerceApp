@@ -1,9 +1,11 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NewEcommerceApp.Database;
 
 namespace NewEcommerceApp
 {
@@ -20,7 +22,19 @@ namespace NewEcommerceApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            {
+                options.Password.RequiredLength = 6;
+                options.Password.RequiredUniqueChars = 0;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+            }
+).AddEntityFrameworkStores<NewEcommerceDbContext>();
+
             NewEcommerceApp.Configuration.ConfigurServices.Configure(services, Configuration);
+
             services.AddAutoMapper(typeof(Startup).Assembly);
             
         }
@@ -43,7 +57,7 @@ namespace NewEcommerceApp
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseAuthentication();
             app.UseRouting();
 
             app.UseAuthorization();
