@@ -180,3 +180,4 @@ C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\bin\
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\bin\Debug\netcoreapp3.1\libman.json

@@ -1,7 +1,9 @@
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -23,6 +25,11 @@ namespace NewEcommerceApp
         {
             services.AddControllersWithViews();
 
+            services.AddMvc(config => {
+                var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+                config.Filters.Add(new AuthorizeFilter(policy));
+            }).AddXmlSerializerFormatters();
+
             services.AddIdentity<IdentityUser, IdentityRole>(options =>
             {
                 options.Password.RequiredLength = 6;
@@ -36,9 +43,9 @@ namespace NewEcommerceApp
             NewEcommerceApp.Configuration.ConfigurServices.Configure(services, Configuration);
 
             services.AddAutoMapper(typeof(Startup).Assembly);
-            
+
         }
-            
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

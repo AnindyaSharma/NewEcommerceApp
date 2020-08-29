@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using NewEcommerceApp.BLL.Abstrations;
@@ -10,6 +11,7 @@ using NewEcommerceApp.Models.ResponseModels;
 
 namespace NewEcommerceApp.Controllers
 {
+    [Authorize]
     public class CustomerController : Controller
     {
         ICustomerManager _customerManager;
@@ -27,6 +29,8 @@ namespace NewEcommerceApp.Controllers
             return View();
         }
 
+        [HttpGet]
+        [AllowAnonymous]
         public IActionResult Create()
         {
             CustomerCreateViewModel customer = new CustomerCreateViewModel();
@@ -73,6 +77,7 @@ namespace NewEcommerceApp.Controllers
 
         //customer/edit/id
         [HttpGet]
+        [Authorize]
         public IActionResult Edit(int? id)
         {
             var model = new CustomerEditViewModel();
