@@ -158,7 +158,6 @@ C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\bin\
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\bin\Debug\netcoreapp3.1\NewEcommerceApp.Repository.Abstrations.pdb
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\Debug\netcoreapp3.1\NewEcommerceApp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\Category\Create.cshtml.g.cs
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\Category\List.cshtml.g.cs
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\Category\Edit.cshtml.g.cs
@@ -181,3 +180,4 @@ C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\bin\
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp\obj\Debug\netcoreapp3.1\NewEcommerceApp.MvcApplicationPartsAssemblyInfo.cache

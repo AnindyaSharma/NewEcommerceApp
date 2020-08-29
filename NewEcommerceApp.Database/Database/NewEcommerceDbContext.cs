@@ -4,7 +4,7 @@ using NewEcommerceApp.Models.EntityModels;
 
 namespace NewEcommerceApp.Database
 {
-    public class NewEcommerceDbContext: IdentityDbContext
+    public class NewEcommerceDbContext: IdentityDbContext<ApplicationUser>
     {
         public NewEcommerceDbContext(DbContextOptions options):base(options)
         {
