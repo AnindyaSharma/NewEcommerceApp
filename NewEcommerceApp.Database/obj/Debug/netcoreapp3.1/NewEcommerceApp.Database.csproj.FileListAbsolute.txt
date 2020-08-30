@@ -11,3 +11,16 @@ C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp.Data
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp.Database\obj\Debug\netcoreapp3.1\NewEcommerceApp.Database.csproj.CopyComplete
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp.Database\obj\Debug\netcoreapp3.1\NewEcommerceApp.Database.dll
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp\NewEcommerceApp.Database\obj\Debug\netcoreapp3.1\NewEcommerceApp.Database.pdb
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp.Database\bin\Debug\netcoreapp3.1\NewEcommerceApp.Database.deps.json
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp.Database\bin\Debug\netcoreapp3.1\NewEcommerceApp.Database.runtimeconfig.json
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp.Database\bin\Debug\netcoreapp3.1\NewEcommerceApp.Database.runtimeconfig.dev.json
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp.Database\bin\Debug\netcoreapp3.1\NewEcommerceApp.Database.dll
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp.Database\bin\Debug\netcoreapp3.1\NewEcommerceApp.Database.pdb
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp.Database\bin\Debug\netcoreapp3.1\NewEcommerceApp.Models.dll
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp.Database\bin\Debug\netcoreapp3.1\NewEcommerceApp.Models.pdb
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp.Database\obj\Debug\netcoreapp3.1\NewEcommerceApp.Database.csprojAssemblyReference.cache
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp.Database\obj\Debug\netcoreapp3.1\NewEcommerceApp.Database.AssemblyInfoInputs.cache
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp.Database\obj\Debug\netcoreapp3.1\NewEcommerceApp.Database.AssemblyInfo.cs
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp.Database\obj\Debug\netcoreapp3.1\NewEcommerceApp.Database.csproj.CopyComplete
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp.Database\obj\Debug\netcoreapp3.1\NewEcommerceApp.Database.dll
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp.Database\obj\Debug\netcoreapp3.1\NewEcommerceApp.Database.pdb

@@ -8613,11 +8613,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.API\\NewEcommerceApp.API.csproj",
+      "projectUniqueName": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.API\\NewEcommerceApp.API.csproj",
       "projectName": "NewEcommerceApp.API",
-      "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.API\\NewEcommerceApp.API.csproj",
+      "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.API\\NewEcommerceApp.API.csproj",
       "packagesPath": "C:\\Users\\Anindya Sharma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.API\\obj\\",
+      "outputPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Anindya Sharma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8633,11 +8633,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.BLL.Abstrations\\NewEcommerceApp.BLL.Abstrations.csproj": {
-              "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.BLL.Abstrations\\NewEcommerceApp.BLL.Abstrations.csproj"
+            "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.BLL.Abstrations\\NewEcommerceApp.BLL.Abstrations.csproj": {
+              "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.BLL.Abstrations\\NewEcommerceApp.BLL.Abstrations.csproj"
             },
-            "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Configuration\\NewEcommerceApp.Configuration.csproj": {
-              "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Configuration\\NewEcommerceApp.Configuration.csproj"
+            "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Configuration\\NewEcommerceApp.Configuration.csproj": {
+              "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Configuration\\NewEcommerceApp.Configuration.csproj"
             }
           }
         }

@@ -5,11 +5,20 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace NewEcommerceApp.Controllers
 {
     public class ErrorController : Controller
     {
+        private readonly ILogger<ErrorController> logger;
+
+        public ErrorController(ILogger<ErrorController> logger)
+        {
+            this.logger = logger;
+        }
+
+
         // GET: /<controller>/
         [Route("Error/{statusCode}")]
         public IActionResult HttpRequest(int statusCode)
@@ -18,9 +27,10 @@ namespace NewEcommerceApp.Controllers
             switch (statusCode)
             {
                 case 404:
-                    ViewBag.ErrorMessage = "404 Page not found";
-                    ViewBag.Path = statusCodeResult.OriginalPath;
-                    ViewBag.QS = statusCodeResult.OriginalQueryString;
+                    ViewBag.ErrorMessage = "Sorry, the resource could not be found";
+                    logger.LogWarning($"404 error occured. Path = " +            $"{statusCodeResult.OriginalPath} and QueryString = " +
+                    $"{statusCodeResult.OriginalQueryString}");
+
                     break;
                 case 500:
                     ViewBag.ErrorMessage = "Content Not Found";
@@ -34,14 +44,12 @@ namespace NewEcommerceApp.Controllers
         public IActionResult Error()
         {
             var exceptionHandlerPathFeature =
-                HttpContext.Features.Get<IExceptionHandlerPathFeature>();
-
-            ViewBag.ExceptionPath = exceptionHandlerPathFeature.Path;
-            ViewBag.ExceptionMessage = exceptionHandlerPathFeature.Error.Message;
-            ViewBag.StackTrace = exceptionHandlerPathFeature.Error.StackTrace;
-
+            HttpContext.Features.Get<IExceptionHandlerPathFeature>();
+            logger.LogError($"The path {exceptionHandlerPathFeature.Path} " +
+                $"threw an exception {exceptionHandlerPathFeature.Error}");
 
             return View("Error");
+
         }
     }
 }

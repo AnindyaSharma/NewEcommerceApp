@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Extensions.Logging;
 using NewEcommerceApp.BLL.Abstrations;
 using NewEcommerceApp.Models;
 using NewEcommerceApp.Models.EntityModels;
@@ -16,12 +18,14 @@ namespace NewEcommerceApp.Controllers
     {
         ICustomerManager _customerManager;
         ICustomerTypeManager _customerTypeManager;
+        private readonly ILogger logger;
         IMapper _mapper;
-        public CustomerController(ICustomerManager customerManager, IMapper mapper, ICustomerTypeManager customerTypeManager)
+        public CustomerController(ICustomerManager customerManager, IMapper mapper, ICustomerTypeManager customerTypeManager, ILogger<CustomerController> logger)
         {
             _customerManager = customerManager;
             _mapper = mapper;
             _customerTypeManager = customerTypeManager;
+            this.logger = logger;
         }
         // GET: /<controller>/
         public IActionResult Index()
@@ -67,6 +71,12 @@ namespace NewEcommerceApp.Controllers
 
         public IActionResult List()
         {
+            logger.LogTrace("Trace Log");
+            logger.LogDebug("Debug Log");
+            logger.LogInformation("Information Log");
+            logger.LogWarning("Warning Log");
+            logger.LogError("Error Log");
+            logger.LogCritical("Critical Log");
             // get all customers from db 
 
             ICollection<Customer> customers = _customerManager.GetAll();
@@ -80,6 +90,8 @@ namespace NewEcommerceApp.Controllers
         [Authorize]
         public IActionResult Edit(int? id)
         {
+            //throw new Exception("Error in Edit View");
+                        
             var model = new CustomerEditViewModel();
             model.CustomerTypeItem = _customerTypeManager.GetAll().Select(c => new SelectListItem()
             {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Repository\\NewEcommerceApp.Repository.csproj": {}
+    "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Repository\\NewEcommerceApp.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.BLL.Abstrations\\NewEcommerceApp.BLL.Abstrations.csproj": {
+    "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.BLL.Abstrations\\NewEcommerceApp.BLL.Abstrations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.BLL.Abstrations\\NewEcommerceApp.BLL.Abstrations.csproj",
+        "projectUniqueName": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.BLL.Abstrations\\NewEcommerceApp.BLL.Abstrations.csproj",
         "projectName": "NewEcommerceApp.BLL.Abstrations",
-        "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.BLL.Abstrations\\NewEcommerceApp.BLL.Abstrations.csproj",
+        "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.BLL.Abstrations\\NewEcommerceApp.BLL.Abstrations.csproj",
         "packagesPath": "C:\\Users\\Anindya Sharma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.BLL.Abstrations\\obj\\",
+        "outputPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.BLL.Abstrations\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anindya Sharma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,11 +27,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj": {
-                "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj"
+              "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj": {
+                "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj"
               },
-              "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Repository.Abstrations\\NewEcommerceApp.Repository.Abstrations.csproj": {
-                "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Repository.Abstrations\\NewEcommerceApp.Repository.Abstrations.csproj"
+              "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Repository.Abstrations\\NewEcommerceApp.Repository.Abstrations.csproj": {
+                "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Repository.Abstrations\\NewEcommerceApp.Repository.Abstrations.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Database\\NewEcommerceApp.Database.csproj": {
+    "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Database\\NewEcommerceApp.Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Database\\NewEcommerceApp.Database.csproj",
+        "projectUniqueName": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Database\\NewEcommerceApp.Database.csproj",
         "projectName": "NewEcommerceApp.Database",
-        "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Database\\NewEcommerceApp.Database.csproj",
+        "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Database\\NewEcommerceApp.Database.csproj",
         "packagesPath": "C:\\Users\\Anindya Sharma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Database\\obj\\",
+        "outputPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Database\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anindya Sharma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -86,8 +86,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj": {
-                "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj"
+              "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj": {
+                "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj"
               }
             }
           }
@@ -141,14 +141,14 @@
         }
       }
     },
-    "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj": {
+    "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj",
         "projectName": "NewEcommerceApp.Models",
-        "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj",
+        "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj",
         "packagesPath": "C:\\Users\\Anindya Sharma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Models\\obj\\",
+        "outputPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anindya Sharma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -199,14 +199,14 @@
         }
       }
     },
-    "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Repository.Abstrations\\NewEcommerceApp.Repository.Abstrations.csproj": {
+    "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Repository.Abstrations\\NewEcommerceApp.Repository.Abstrations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Repository.Abstrations\\NewEcommerceApp.Repository.Abstrations.csproj",
+        "projectUniqueName": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Repository.Abstrations\\NewEcommerceApp.Repository.Abstrations.csproj",
         "projectName": "NewEcommerceApp.Repository.Abstrations",
-        "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Repository.Abstrations\\NewEcommerceApp.Repository.Abstrations.csproj",
+        "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Repository.Abstrations\\NewEcommerceApp.Repository.Abstrations.csproj",
         "packagesPath": "C:\\Users\\Anindya Sharma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Repository.Abstrations\\obj\\",
+        "outputPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Repository.Abstrations\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anindya Sharma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -222,8 +222,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj": {
-                "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj"
+              "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj": {
+                "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Models\\NewEcommerceApp.Models.csproj"
               }
             }
           }
@@ -261,14 +261,14 @@
         }
       }
     },
-    "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Repository\\NewEcommerceApp.Repository.csproj": {
+    "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Repository\\NewEcommerceApp.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Repository\\NewEcommerceApp.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Repository\\NewEcommerceApp.Repository.csproj",
         "projectName": "NewEcommerceApp.Repository",
-        "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Repository\\NewEcommerceApp.Repository.csproj",
+        "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Repository\\NewEcommerceApp.Repository.csproj",
         "packagesPath": "C:\\Users\\Anindya Sharma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Repository\\obj\\",
+        "outputPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anindya Sharma\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -284,14 +284,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.BLL.Abstrations\\NewEcommerceApp.BLL.Abstrations.csproj": {
-                "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.BLL.Abstrations\\NewEcommerceApp.BLL.Abstrations.csproj"
+              "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.BLL.Abstrations\\NewEcommerceApp.BLL.Abstrations.csproj": {
+                "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.BLL.Abstrations\\NewEcommerceApp.BLL.Abstrations.csproj"
               },
-              "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Database\\NewEcommerceApp.Database.csproj": {
-                "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Database\\NewEcommerceApp.Database.csproj"
+              "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Database\\NewEcommerceApp.Database.csproj": {
+                "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Database\\NewEcommerceApp.Database.csproj"
               },
-              "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Repository.Abstrations\\NewEcommerceApp.Repository.Abstrations.csproj": {
-                "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp\\NewEcommerceApp.Repository.Abstrations\\NewEcommerceApp.Repository.Abstrations.csproj"
+              "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Repository.Abstrations\\NewEcommerceApp.Repository.Abstrations.csproj": {
+                "projectPath": "C:\\Users\\Anindya Sharma\\Desktop\\ASP.NET Exc\\NewEcommerceApp-master\\NewEcommerceApp.Repository.Abstrations\\NewEcommerceApp.Repository.Abstrations.csproj"
               }
             }
           }
