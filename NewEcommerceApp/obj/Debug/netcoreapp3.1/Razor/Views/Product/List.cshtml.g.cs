@@ -26,8 +26,15 @@ using NewEcommerceApp.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"29f2a45a23eb7f5d98ed5ef2473047a5d2f01443", @"/Views/Product/List.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"71a284329ad0d3f8eb9a8097cc3e19d55ca996eb", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dece806ee11e4b8c64641af5135bede426cdcd5f", @"/Views/_ViewImports.cshtml")]
     public class Views_Product_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ICollection<NewEcommerceApp.Models.EntityModels.Product>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("collapse-item"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -62,7 +69,7 @@ using NewEcommerceApp.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\n\n    <h1>Product List</h1>\n    <p>\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29f2a45a23eb7f5d98ed5ef2473047a5d2f014435556", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29f2a45a23eb7f5d98ed5ef2473047a5d2f014435783", async() => {
                 WriteLiteral("Add Product");
             }
             );
@@ -174,7 +181,7 @@ WriteAttributeValue("", 1148, imgsrc, 1148, 7, false);
 #line hidden
 #nullable disable
             WriteLiteral("</td>\n                    <td>\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29f2a45a23eb7f5d98ed5ef2473047a5d2f0144310489", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29f2a45a23eb7f5d98ed5ef2473047a5d2f0144310716", async() => {
                 WriteLiteral("Edit");
             }
             );
@@ -206,7 +213,7 @@ WriteAttributeValue("", 1148, imgsrc, 1148, 7, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" |\n                    \n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29f2a45a23eb7f5d98ed5ef2473047a5d2f0144312806", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "29f2a45a23eb7f5d98ed5ef2473047a5d2f0144313033", async() => {
                 WriteLiteral("Delete");
             }
             );

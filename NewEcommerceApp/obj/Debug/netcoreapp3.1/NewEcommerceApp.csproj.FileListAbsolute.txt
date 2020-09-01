@@ -331,7 +331,6 @@ C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceA
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp\obj\Debug\netcoreapp3.1\NewEcommerceApp.TagHelpers.input.cache
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp\obj\Debug\netcoreapp3.1\NewEcommerceApp.TagHelpers.output.cache
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp\obj\Debug\netcoreapp3.1\NewEcommerceApp.RazorCoreGenerate.cache
-C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\Category\Create.cshtml.g.cs
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\Category\Edit.cshtml.g.cs
@@ -368,3 +367,4 @@ C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceA
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
 C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp\obj\Debug\netcoreapp3.1\NewEcommerceApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs

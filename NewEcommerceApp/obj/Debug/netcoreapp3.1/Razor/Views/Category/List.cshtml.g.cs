@@ -27,6 +27,13 @@ using NewEcommerceApp.Models;
 #line hidden
 #nullable disable
 #nullable restore
+#line 3 "C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\Anindya Sharma\Desktop\ASP.NET Exc\NewEcommerceApp-master\NewEcommerceApp\Views\Category\List.cshtml"
 using NewEcommerceApp.Models.EntityModels;
 
@@ -34,7 +41,7 @@ using NewEcommerceApp.Models.EntityModels;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e6a9834cbc0e8278f2e403c3c3ad40ef4474d362", @"/Views/Category/List.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"71a284329ad0d3f8eb9a8097cc3e19d55ca996eb", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dece806ee11e4b8c64641af5135bede426cdcd5f", @"/Views/_ViewImports.cshtml")]
     public class Views_Category_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<NewEcommerceApp.Models.EntityModels.Category>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Edit", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -98,7 +105,7 @@ using NewEcommerceApp.Models.EntityModels;
 #line hidden
 #nullable disable
             WriteLiteral("</td>\n                \n                <td>\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6a9834cbc0e8278f2e403c3c3ad40ef4474d3624948", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6a9834cbc0e8278f2e403c3c3ad40ef4474d3625175", async() => {
                 WriteLiteral("Edit");
             }
             );
@@ -129,7 +136,7 @@ using NewEcommerceApp.Models.EntityModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" |\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6a9834cbc0e8278f2e403c3c3ad40ef4474d3627153", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e6a9834cbc0e8278f2e403c3c3ad40ef4474d3627380", async() => {
                 WriteLiteral("Delete");
             }
             );
